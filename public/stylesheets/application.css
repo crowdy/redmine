@@ -441,9 +441,10 @@ div.square {
 .contextual input, .contextual select {font-size:0.9em;}
 .message .contextual { margin-top: 0; }
 
-.splitcontent {overflow:auto;}
-.splitcontentleft, #list-left {float:left; width:49%;}
-.splitcontentright, #list-right {float:right; width:49%;}
+.splitcontent {overflow: auto; display: flex; flex-wrap: wrap;}
+.splitcontentleft, #list-left {flex: 1; margin-right: 5px;}
+.splitcontentright, #list-right {flex: 1; margin-left: 5px;}
+#list-top {width: 100%;}
 form {display: inline;}
 input, select {vertical-align: middle; margin-top: 1px; margin-bottom: 1px;}
 input[type="submit"] { -webkit-appearance: button; }
@@ -951,6 +952,7 @@ table.cal td p.day-num {font-size: 1.1em; text-align:right;}
 table.cal td.odd p.day-num {color: #bbb;}
 table.cal td.today {background:#ffffdd;}
 table.cal td.today p.day-num {font-weight: bold;}
+table.cal td.nwday:not(.odd) {background-color:#f1f1f1;}
 table.cal .starting a.issue, p.cal.legend .starting {background: url(../images/bullet_go.png) no-repeat -1px -2px; padding-left:16px;}
 table.cal .ending a.issue, p.cal.legend .ending {background: url(../images/bullet_end.png) no-repeat -1px -2px; padding-left:16px;}
 table.cal .starting.ending a.issue, p.cal.legend .starting.ending {background: url(../images/bullet_diamond.png) no-repeat -1px -2px; padding-left:16px;}
